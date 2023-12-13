@@ -1,0 +1,108 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
+html {
+    height: max-content;
+    background-color: rgba(220, 45, 45, 0.7);
+}
+
+body {
+    position: absolute;
+    background-color: aquamarine;
+    display: grid;
+    height: max-content;
+    width: 98.9vw !important;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "header-nav"
+        "main"
+        "footer";
+    gap: 1em;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.just_cont-space_ar {
+    justify-content: space-around;
+}
+
+.just_cont-space_bt {
+    justify-content: space-between;
+}
+
+.just_cont-space_ev {
+    justify-content: space-evenly;
+}
+
+.logo_img {
+    height: 24px;
+    width: 74px;
+}
+
+i.bi{
+    font-size: 1.5em;
+}
+
+.hidden{
+    display: none;
+}
+
+/******************** HEADER-NAV ********************/
+.header_nav {
+    position: relative;
+    grid-area: header-nav;
+    background-color: white;
+    height: max-content;
+    width: inherit;
+}
+
+
+/******************** HEADER ********************/
+header{
+    background-color: aquamarine;
+    height: 48px;
+    padding: 8px;
+    width: inherit;
+}
+
+nav{
+    background-color: aqua;
+    height: 48px;
+    width: inherit;
+    border-bottom: 1px solid blue /*#dadce0*/;
+}
+
+
+/******************** MAIN ********************/
+main {
+    background-color: blanchedalmond;
+    height: 100vh;
+    width: 1040px !important;
+    margin: 0 auto !important;
+}
+
+
+/******************** TOP ********************/
+.top{
+    background-color: brown;
+    height: max-content;
+    width: inherit !important;
+}
+
+.question{
+}
+
+#paragraph:checked ~ .toggle{
+    display: block;
+    margin-top: 10px !important;
+}
